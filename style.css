@@ -174,33 +174,348 @@ color:var(--green);
     }
     /* BANNER */
     .banner{
-        background-color:var(--gray);
-        padding-top: 5rem;
+      background-color: var(--gray);
+      padding-top: 5rem;
     }
     .banner_wrapper{
-        position:absolute;
+      display: flex;
+    }
+    .banner_left{
+      padding-left: 15rem;
+      padding-top: 25rem;
     }
     .banner_left h1{
-        font-size: 10rem;
-        line-height:1;
-        max-width:80rem;
+      font-size: 10rem;
+      line-height: 1;
+      font-weight: 700;
+      margin-top: 2rem;
     }
     .banner_right{
-        position:relative;
-        left:140rem;
+      position: relative;
+      left: 25rem;
+      top: 0;
     }
     .banner_right img{
-        width:50rem;
+      width:100rem;
+      height: 70rem;
     }
+  .banner_left span{
+    color:var(--green);
+  }
+  /* MY ABOUT */
+  /* ABOUT ME */
+  /* .about-me{
+    background-color: var(--light);
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+  .about-me_wrapper{
+    display: flex;
+  }
+  .about-me_left img{
+    width:80rem;
+    height:52rem;
+  }
+.about-me_left{
+ margin-top: -5rem;
+ padding-left:17rem;
+}
+.about-me_right{
+    padding-left: 15rem;
+    padding-top: 0rem;
+    margin-right:0rem;
+  }
+  .about-me_right span{
+    font-weight:700;
+  }
+  .about-me_right h1{
+    font-size: 7rem;
+    line-height: 1;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+  .about-me_right p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 2rem;
+    max-width:90%;
+    margin-bottom:3rem;
+  }
+  .about-me_right ul{
+    display: flex;
+    gap:4.6rem;
+    margin-bottom:2rem;
+    font-size:1.8rem;
+}
+.about-me_right ul li a{
+    color:var(--dark);
+    font-weight:600;
+    
+}
+.about-me_right ul li a:hover{
+    color:var(--green);
+    text-decoration-color: var(--green);
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+}
+.about-me_right h2{
+font-size:1.8rem;
+font-weight:600;
+}
+.about-me_right h2 span{
+  font-size:1.8rem;
+  font-weight:normal;
+  }
+.about-me_right h3{
+margin-top:0rem;
+margin-bottom:3rem;
+} */
+/* Ma'am's ABOUT */
+.about{
+  padding-bottom: 5rem;
+}
+.about__wrapper{
+  display: grid;
+  grid-template-columns: 50rem 1fr;
+  gap: 5rem;
+}
+.about__left{
+  padding-left: 17rem;
+}
+.about__left img{
+  width: 60rem;
+  border-radius: 1rem;
+  transform: translateY(-4.5rem);
+}
+.about__right{
+  padding-top: 4rem;
+}
+.about__right h3{
+  font-size: 7rem;
+  font-weight: 500;
+}
+.about__right p{
+  max-width: 70rem;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about__right span{
+  font-weight: 700;
+}
+.about__title{
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about__title li{
+  display: inline-block;
+}
+.about__title li::after{
+  content: " ";
+  width: 0px;
+  height: 2px;
+  background-color: var(--gray);
+  transition: 300ms;
+  display: block;
+}
+.about__title li:hover::after{
+  width: 100%;
+}
+.about__main-skills{
+  font-weight: 600;
+}
+.about__main-skills li{
+  display: flex;
+}
+.about__main-skills li span{
+  font-weight: 300;
+}
+.about__main-desc{
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+ /* DESIGN FOR JAVASCRIPT */
+.about__title li:first-child.open{
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.about__main-skills{
+  display: none;
+}
+.about__main-skills.open{
+  display: block;
+  
+}
+/* SERVICES */
+.services{
+  padding:5rem 0;
+}
+.services_title{
+  text-align: center;
+}
+.services_title h3{
+font-size: 5rem;
+font-weight: 500;
+margin-bottom:2rem;
+}
+.services_title p{
+  font-size: 2rem;
+  font-weight: 300;
+  /* for space */
+  margin-bottom: 2rem;
+}
+/* paghihiwalay ng cards */
+.services_wrapper{
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  gap: 3rem;
+  align-content: center;
+  justify-content: center;
+ }
+/* pagporma ng cards */
+.services_card{
+  /* bg ng cards */
+  background-color: var(--gray);
+  padding:4rem;
+  border-radius:1rem;
+  /* para center na lahat ng nasa cards */
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+/* for icons */
+.services_card span{
+  color: var(--green);
+  font-size: 3rem;;
+  margin-bottom: 1rem;
+  margin-right: 18.5rem ;
+}
+/* for words under icons */
+.services_card h4{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.services_card p{
+  font-weight: 300;
+  max-width:20rem;
+  text-align: left;
+  margin-right: 8%;
+}
+/* CLIENTS */
+.client{
+  padding:5rem 0;
+}
+.client_title{
+  text-align: center;
+}
+.client_title h3{
+font-size: 5rem;
+font-weight: 700;
+margin-bottom:2rem;
+}
+.client_title p{
+  font-size: 2rem;
+  font-weight: 300;
+  /* for space */
+  margin-bottom: 5rem;
+}
+.client_card img{
+  height: 100%;
+  width:100%
+}
+.client_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:0rem;
+}
+.client_card{
+  background-color: var(--gray);
+  border-radius:1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  border: 1px solid var(--gray);
+}
+/* PROJECTS */
+.project{
+  padding:5rem 0;
+}
+.project_title{
+  text-align: center;
+}
+.project_title h3{
+font-size: 5rem;
+font-weight: 700;
+margin-bottom:2rem;
+}
+.project_title p{
+  font-size: 2rem;
+  font-weight: 300;
+  /* for space */
+  margin-bottom: 5rem;
+}
+/* paghihiwalay ng cards */
+.project_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:3rem;
+  margin: 0 auto;
+
+}
+/* pagporma ng cards */
+.project_card{
+ display: flex;
+ flex-direction:column;
+ justify-content: center;
+ align-items: center;
+}
+.project_card img{
+  height: 100%;
+  width:100%;
+  filter: brightness(50%);
+}
+.project_card span{
+  color:var(--light);
+  position:absolute;
+  margin-top:-10rem;
+
+}
+.project_card h4{
+  color:var(--light);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight:600;
+  margin-top:6.8rem;
+  position:absolute;
+  text-align: center;
+}
+.project_card a{
+  color:var(--light);
+  font-weight:500;
+  position:absolute;
+  margin-top:23rem;
+  border: 3px solid var(--light);
+
+  }
+  .project_card a:hover{
+  color:var(--mintgreen);
+  border: 3px solid var(--mintgreen);
+
+  }
   /* REPEATABLE PATTERNS */
     :root{
     --green: #7d9a68;
     --light: #ffffff;
     --dark: #2b2b2b;
     --gray: #D3D3D3;
+    --mintgreen:#6ACCBC;
     --poppins: "Poppins", sans-serif;
-   
-
   }
   /* dito lagi kapag button */
   .btn{
@@ -217,3 +532,8 @@ background-color: var(--light);
 border: 1px solid var(--dark);
 color:var(--dark);
   }
+  .btn.bg--border-light{
+    background-color: transparent;
+    border: 2px solid var(--light);
+    color:var(--light);
+      }
